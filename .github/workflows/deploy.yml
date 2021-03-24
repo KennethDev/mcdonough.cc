@@ -25,5 +25,6 @@ jobs:
         PORT: ${{ secrets.PORT }}
         KEY: ${{ secrets.SSHKEY }}
         script: |
+          node -v
           npm i
           npm run build
