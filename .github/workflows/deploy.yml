@@ -25,6 +25,6 @@ jobs:
         PORT: ${{ secrets.PORT }}
         KEY: ${{ secrets.SSHKEY }}
         script: |
-          node -v
+          nvm install --lts
           npm i
           npm run build
